@@ -1,0 +1,11 @@
+2024-03-24 17:22:44,947 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-03-24 17:22:48,631 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58449
+2024-03-24 17:22:48,778 - INFO - Adatlekerdezes tortent: az adatbazis jelenleg ures!
+2024-03-24 17:22:49,002 - INFO - Ujabb adatrekord kerult az adatbazisba!
+2024-03-24 17:22:49,005 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-03-24 17:22:49,007 - INFO - A kliens lezarta a kapcsolatot!
+2024-03-24 17:23:02,501 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58452
+2024-03-24 17:23:02,502 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-03-24 17:23:02,680 - INFO - Ujabb adatrekord kerult az adatbazisba!
+2024-03-24 17:23:02,683 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-03-24 17:23:02,685 - INFO - A kliens lezarta a kapcsolatot!

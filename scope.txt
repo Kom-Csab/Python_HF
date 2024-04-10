@@ -1,0 +1,18 @@
+Alapvető követelmények:
+
+TCP szerver
+-egyetlen folyamatos kapcsolat felépítése
+-adatbázis utasítások fogadása a klienstől
+-visszajelzések, illetve lekérdezett adatok elküldése
+-adatok fogadása
+  --> ezeket sqlite adatbázisban tárolja
+
+TCP kliens
+-rákapcsolódik a szerverre
+-értesít a műveletekről
+-felkínálja a lehetőségeket
+-elküldi az adatokat
+-megjeleníti az adatokat
+
+Osztályok: tcpServer, tcpClient
+Fájlok: adatbázisfájl, szerver script, kliens script
