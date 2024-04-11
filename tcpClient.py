@@ -69,7 +69,6 @@ class tcpClient:
 if __name__ == "__main__":
     cl = tcpClient("127.0.0.1", 53435)
     if cl.connect():
-        # cl.main()
         cl.fetch_records()
         cl.send_data("Teszt üzenet")
         cl.fetch_records(3)
