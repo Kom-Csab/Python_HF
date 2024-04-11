@@ -7,13 +7,16 @@ class databaseHandler:
         self.__dbName = dbName
         self.__myLogger = self.__setup_logger("databaseHandler_logger", self.__logs)
         
-    def _get_records(self):
+    def _get_records(self, index):
         try:
             conn = sqlite3.connect(self.__dbName)
             cursor = conn.cursor()
             cursor.execute('''CREATE TABLE IF NOT EXISTS kliens_adatok (id INTEGER PRIMARY KEY, data TEXT)''')
             conn.commit()
-            cursor.execute("SELECT * FROM kliens_adatok")
+            if int(index) <= 0:
+                cursor.execute("SELECT * FROM kliens_adatok")
+            else:
+                cursor.execute("SELECT * FROM kliens_adatok WHERE id=?", (index))
             records = cursor.fetchall()
             data = self.__format_records(records)
             conn.close()

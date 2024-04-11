@@ -9,3 +9,97 @@
 2024-03-24 17:23:02,680 - INFO - Ujabb adatrekord kerult az adatbazisba!
 2024-03-24 17:23:02,683 - INFO - Adatlekerdezes tortent: adatok elkuldve!
 2024-03-24 17:23:02,685 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:30:43,173 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 19:30:49,147 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:50233
+2024-04-11 19:30:49,154 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 19:30:49,154 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:37:15,314 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 19:37:22,129 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57952
+2024-04-11 19:37:22,133 - WARNING - Kliens-kezelesi hiba: list index out of range
+2024-04-11 19:43:46,647 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 19:43:50,612 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58044
+2024-04-11 19:43:50,612 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:45:16,799 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 19:45:20,560 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58068
+2024-04-11 19:45:20,561 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 19:45:20,563 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:45:38,778 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58071
+2024-04-11 19:45:38,779 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 19:45:38,780 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:46:56,430 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 19:47:00,290 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58090
+2024-04-11 19:47:00,294 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 19:47:00,294 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:47:10,526 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58092
+2024-04-11 19:47:10,526 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 19:47:10,527 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:47:19,148 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58095
+2024-04-11 19:47:19,148 - INFO - Adatlekerdezes tortent: az adatbazis jelenleg ures!
+2024-04-11 19:47:19,148 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:50:40,160 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 19:50:44,054 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58122
+2024-04-11 19:50:44,058 - INFO - Adatlekerdezes tortent: az adatbazis jelenleg ures!
+2024-04-11 19:50:44,059 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:58:40,235 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 19:58:43,836 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58184
+2024-04-11 19:58:43,837 - INFO - Adatlekerdezes tortent: az adatbazis jelenleg ures!
+2024-04-11 19:58:43,837 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:59:05,980 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 19:59:09,760 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58197
+2024-04-11 19:59:09,760 - INFO - Adatlekerdezes tortent: az adatbazis jelenleg ures!
+2024-04-11 19:59:09,760 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 19:59:23,492 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58199
+2024-04-11 19:59:23,493 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 19:59:47,236 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58202
+2024-04-11 19:59:47,236 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 20:00:23,216 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58206
+2024-04-11 20:00:23,217 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 20:01:09,516 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:01:13,082 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58214
+2024-04-11 20:01:13,083 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 20:01:57,568 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:02:03,282 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58234
+2024-04-11 20:02:03,283 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 20:03:51,288 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:03:57,653 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58245
+2024-04-11 20:03:57,654 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 20:04:40,993 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:04:44,765 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:58251
+2024-04-11 20:04:44,766 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 20:09:03,014 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:09:05,733 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57175
+2024-04-11 20:09:05,734 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 20:10:00,708 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:10:03,241 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57190
+2024-04-11 20:10:35,541 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:10:39,584 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57198
+2024-04-11 20:10:39,585 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 20:10:39,585 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 20:11:08,865 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57203
+2024-04-11 20:11:08,865 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 20:11:08,866 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 20:11:23,659 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57205
+2024-04-11 20:11:23,663 - WARNING - Kliens-kezelesi hiba: list index out of range
+2024-04-11 20:11:37,056 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57207
+2024-04-11 20:11:37,057 - WARNING - Kliens-kezelesi hiba: can only join an iterable
+2024-04-11 20:26:08,643 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:26:12,653 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57300
+2024-04-11 20:26:12,654 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 20:36:05,925 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:36:10,541 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57207
+2024-04-11 20:36:10,542 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 20:36:50,501 - INFO - Szerver a kovetkezo cimen hallgatozik: 127.0.0.1:53435
+2024-04-11 20:36:54,534 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57215
+2024-04-11 20:36:54,534 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 20:37:07,960 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57218
+2024-04-11 20:37:07,960 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 20:37:07,961 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 20:37:22,752 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57220
+2024-04-11 20:37:22,753 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 20:37:22,754 - INFO - A kliens lezarta a kapcsolatot!
+2024-04-11 20:37:56,385 - INFO - Uj kapcsolat errol a cimrol: 127.0.0.1:57228
+2024-04-11 20:37:56,386 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 20:37:56,568 - INFO - Ujabb adatrekord kerult az adatbazisba!
+2024-04-11 20:37:56,569 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 20:37:56,570 - INFO - Adatlekerdezes tortent: adatok elkuldve!
+2024-04-11 20:37:56,570 - INFO - A kliens lezarta a kapcsolatot!

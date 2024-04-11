@@ -23,22 +23,22 @@ class tcpServer:
     def __handle_client(self, cl_socket):
         try:
             while True:
-                incoming = cl_socket.recv(1024).decode()
-                if incoming == "FETCH":
-                    records = self.__dbHandler._get_records()
+                incoming = cl_socket.recv(1024).decode().split("#")
+                if incoming[1] == "FETCH":
+                    records = self.__dbHandler._get_records(incoming[0])
                     if records == "Empty":
-                        cl_socket.sendall("Az adatbázis jelenleg üres!".encode())
+                        cl_socket.sendall("Empty".encode())
                         self.__myLogger.info("Adatlekerdezes tortent: az adatbazis jelenleg ures!")
                     else:
                         response = "\n".join(records)
                         cl_socket.sendall(response.encode())
                         self.__myLogger.info("Adatlekerdezes tortent: adatok elkuldve!")
-                elif incoming == "\q":
+                elif incoming[1] == "\q":
                     cl_socket.sendall("A kapcsolat lezárult az adatbázis-szerverrel.".encode())
                     self.__myLogger.info("A kliens lezarta a kapcsolatot!")
                     break
                 else:
-                    self.__dbHandler._save_to_db(incoming)
+                    self.__dbHandler._save_to_db(incoming[1])
                     cl_socket.sendall(b"Sikeresen mentve!")
                     self.__myLogger.info("Ujabb adatrekord kerult az adatbazisba!")
         except Exception as ex:

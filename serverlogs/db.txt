@@ -1,0 +1,9 @@
+2024-04-11 19:59:23,493 - WARNING - Hiba az adatok lekérése közben: Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+2024-04-11 19:59:47,236 - WARNING - Hiba az adatok lekérése közben: Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+2024-04-11 20:00:23,217 - WARNING - Hiba az adatok lekérése közben: Incorrect number of bindings supplied. The current statement uses 1, and there are 2 supplied.
+2024-04-11 20:01:13,083 - WARNING - Hiba az adatok lekérése közben: Incorrect number of bindings supplied. The current statement uses 1, and there are 2 supplied.
+2024-04-11 20:02:03,282 - WARNING - Hiba az adatok lekérése közben: Incorrect number of bindings supplied. The current statement uses 1, and there are 2 supplied.
+2024-04-11 20:03:57,654 - WARNING - Hiba az adatok lekérése közben: '<=' not supported between instances of 'str' and 'int'
+2024-04-11 20:04:44,766 - WARNING - Hiba az adatok lekérése közben: '<=' not supported between instances of 'str' and 'int'
+2024-04-11 20:09:05,734 - WARNING - Hiba az adatok lekérése közben: '<=' not supported between instances of 'str' and 'int'
+2024-04-11 20:11:37,057 - WARNING - Hiba az adatok lekérése közben: invalid literal for int() with base 10: 'abc'
