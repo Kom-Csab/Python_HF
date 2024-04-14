@@ -2,7 +2,7 @@ import sqlite3
 import logging
 
 class databaseHandler:
-    def __init__(self, logs = "serverlogs\db.txt", dbName = "SQlite\data.db"):
+    def __init__(self, logs = "serverlogs\db.txt", dbName = ".\data.db"):
         self.__logs = logs
         self.__dbName = dbName
         self.__myLogger = self.__setup_logger("databaseHandler_logger", self.__logs)

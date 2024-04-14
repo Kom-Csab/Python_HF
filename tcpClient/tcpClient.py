@@ -64,7 +64,7 @@ class tcpClient:
                     self.__myLogger.info(f"Nincs megfelelo adat! Azonosito: {index}")
                 else:
                     records = response.split("\n")
-                    print("Adatbázisban lévő rekordok:")
+                    print("\nAdatbázisban lévő rekordok:")
                     for record in records:
                         print(record)
             else:
@@ -93,7 +93,7 @@ class tcpClient:
         try:
             self.__clSocket.sendall(b"#\q")
             answer = self.__clSocket.recv(1024).decode()
-            print(f"A kiszolgáló válasza: {answer}")
+            print(f"\nA kiszolgáló válasza: {answer}")
             self.__clSocket.close()
             self.__myLogger.info("A kapcsolat lezarult a szerverrel!")
         except Exception as ex:
