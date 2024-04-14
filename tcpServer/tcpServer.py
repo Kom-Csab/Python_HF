@@ -1,12 +1,12 @@
 import socket
-import database_manager
+import SQlite.database_manager as db_manager
 import logging
 
 class tcpServer:
     def __init__(self, host, port, logs = "serverlogs\general.txt"):
         self.__host = host
         self.__port = port
-        self.__dbHandler = database_manager.databaseHandler()
+        self.__dbHandler = db_manager.databaseHandler()
         self.__logs = logs
         self.__myLogger = self.__setup_logger("tcp_server_logger", self.__logs)
         self.__srvSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
