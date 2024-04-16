@@ -22,7 +22,7 @@ class databaseHandler:
             conn.close()
             return data
         except Exception as ex:
-            self.__myLogger.warning(f"Hiba az adatok lekérése közben: {ex}")
+            self.__myLogger.critical(f"Hiba az adatok lekerese közben: {ex}")
             
     def _save_to_db(self, data):
         try:
@@ -33,7 +33,7 @@ class databaseHandler:
             conn.commit()
             conn.close()
         except Exception as ex:
-            self.__myLogger.warning(f"Hiba az adatok mentése közben: {ex}")
+            self.__myLogger.critical(f"Hiba az adatok mentese közben: {ex}")
             
     def __setup_logger(self, name, logs):
         logger = logging.getLogger(name)

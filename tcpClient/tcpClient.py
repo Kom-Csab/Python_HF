@@ -38,12 +38,12 @@ class tcpClient:
                         is_finished = 1
             except Exception as ex:
                 print("\nHelytelen választás, kérem próbálja újra!\n")
-                self.__myLogger.error(f"Hiba a felhasznalo keresenek feldolgozas kozben! Hiba leirasa: {ex}")
+                self.__myLogger.critical(f"Hiba a felhasznalo keresenek feldolgozas kozben! Hiba leirasa: {ex}")
                 
             
     def __send_data(self):
         try:
-            data = "#" + input("\nKérem adja meg, a letárolandó adatot! ")
+            data = input("\nKérem adja meg, a letárolandó adatot! ") + "#SAVE"
             self.__clSocket.sendall(data.encode())
             response = self.__clSocket.recv(1024).decode()
             print(f"\nA kiszolgáló válasza: {response}\n")
