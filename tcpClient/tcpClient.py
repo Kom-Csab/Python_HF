@@ -2,7 +2,7 @@ import socket
 import logging
 
 class tcpClient:
-    def __init__(self, host, port, logs = "tcpClient/clientlogs/general.txt"):
+    def __init__(self, host, port, logs = "clientlogs/general.txt"):
         self.__clSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.__host = host
         self.__port = port
@@ -36,8 +36,11 @@ class tcpClient:
                     operation()
                     if choice == 3:
                         is_finished = 1
+                else:
+                    print(f"\nA megadott szám nem szerepel a lehetőségek között!")
+                    self.__myLogger.warning(f"Rossz input! Lehetosegek szama: {self.__commands.keys()}, felhasznalo valasza: {choice}")
             except Exception as ex:
-                print("\nHelytelen választás, kérem próbálja újra!\n")
+                print("\nHelytelen választás, kérem próbálja újra!")
                 self.__myLogger.critical(f"Hiba a felhasznalo keresenek feldolgozas kozben! Hiba leirasa: {ex}")
                 
             
@@ -46,7 +49,7 @@ class tcpClient:
             data = input("\nKérem adja meg, a letárolandó adatot! ") + "#SAVE"
             self.__clSocket.sendall(data.encode())
             response = self.__clSocket.recv(1024).decode()
-            print(f"\nA kiszolgáló válasza: {response}\n")
+            print(f"\nA kiszolgáló válasza: {response}")
             self.__myLogger.info("Adatok elkuldve a szervernek!")
         except Exception as e:
             print(f"Küldés közben hiba lépett fel! {e}")
@@ -68,7 +71,7 @@ class tcpClient:
                     for record in records:
                         print(record)
             else:
-                print(f"A megadott index nem szám! Index: {index}")
+                print(f"\nA megadott index nem szám! Index: {index}")
                 self.__myLogger.critical(f"Megadott index nem egy szam! Index: {index}")
         except Exception as e:
             print(f"Hiba a lekérdezés során! {e}")
@@ -98,7 +101,7 @@ class tcpClient:
             self.__myLogger.info("A kapcsolat lezarult a szerverrel!")
         except Exception as ex:
             print(f"Hiba a kapcsolat lezárása közben! {ex}")
-            self.__myLogger.critical(f"Hiba a kapcsolat lezárása közben! Hiba leírás: {ex}")
+            self.__myLogger.critical(f"Hiba a kapcsolat lezarása közben! Hiba leírás: {ex}")
         
 if __name__ == "__main__":
     cl = tcpClient("127.0.0.1", 53435)

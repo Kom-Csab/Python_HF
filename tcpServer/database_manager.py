@@ -16,13 +16,13 @@ class databaseHandler:
             if int(index) <= 0:
                 cursor.execute("SELECT * FROM kliens_adatok")
             else:
-                cursor.execute("SELECT * FROM kliens_adatok WHERE id=?", (index))
+                cursor.execute("SELECT * FROM kliens_adatok WHERE id=?", (index,))
             records = cursor.fetchall()
             data = self.__format_records(records)
             conn.close()
             return data
         except Exception as ex:
-            self.__myLogger.critical(f"Hiba az adatok lekerese közben: {ex}")
+            self.__myLogger.critical(f"Hiba az adatok lekerese kozben: {ex}")
             
     def _save_to_db(self, data):
         try:
@@ -33,7 +33,7 @@ class databaseHandler:
             conn.commit()
             conn.close()
         except Exception as ex:
-            self.__myLogger.critical(f"Hiba az adatok mentese közben: {ex}")
+            self.__myLogger.critical(f"Hiba az adatok mentese kozben: {ex}")
             
     def __setup_logger(self, name, logs):
         logger = logging.getLogger(name)

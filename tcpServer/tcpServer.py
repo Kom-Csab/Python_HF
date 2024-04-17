@@ -19,6 +19,8 @@ class tcpServer:
             cl_socket, cl_addr = self.__srvSocket.accept()
             self.__myLogger.info(f"Uj kapcsolat errol a cimrol: {cl_addr[0]}:{cl_addr[1]}")
             self.__handle_client(cl_socket)
+            # self.__close()
+            # break
     
     def __handle_client(self, cl_socket):
         try:
@@ -45,7 +47,8 @@ class tcpServer:
         
     def __close(self):
         self.__srvSocket.close()
+        self.__myLogger.info("Az adatbazis szerver leall...")
         
 if __name__ == "__main__":
     srv = tcpServer("127.0.0.1", 53435)
-    srv.start()
+    srv.start()  
