@@ -2,12 +2,14 @@ import socket
 import logging
 
 class tcpClient:
-    def __init__(self, host, port, logs = "tcpClient/clientlogs/general.txt"):
+    def __init__(self, host, port, logs = "./clientlogs/general.txt"):
         self.__clSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.__host = host
         self.__port = port
+        
         self.__logs = logs
         self.__myLogger = self.__setup_logger("tcp_client_logger", self.__logs)
+        
         self.__commands = {
             1 : self.__send_data,
             2 : self.__fetch_records,
@@ -26,8 +28,7 @@ class tcpClient:
         return True
             
     def menu(self):
-        is_finished = 0
-        while not is_finished:
+        while True:
             try:
                 self.__print_functions()
                 choice = int(input("Kérem válasszon az alábbi opciók közül! "))
@@ -35,7 +36,7 @@ class tcpClient:
                     operation = self.__commands[choice]
                     operation()
                     if choice == 3:
-                        is_finished = 1
+                        break
                 else:
                     print(f"\nA megadott szám nem szerepel a lehetőségek között!")
                     self.__myLogger.warning(f"Rossz input! Lehetosegek szama: {self.__commands.keys()}, felhasznalo valasza: {choice}")

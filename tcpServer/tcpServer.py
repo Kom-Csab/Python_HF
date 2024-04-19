@@ -3,14 +3,17 @@ import request_handler
 import logging
 
 class tcpServer:
-    def __init__(self, host, port, logs = "tcpServer/serverlogs/general.txt"):
+    def __init__(self, host, port, logs = "./serverlogs/general.txt"):
         self.__host = host
         self.__port = port
-        self.__reqHandler = request_handler.reqHandler()
-        self._logs = logs
-        self.__myLogger = self.__setup_logger("tcp_server_logger", self._logs)
+        
         self.__srvSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.__srvSocket.bind((self.__host, self.__port))
+        
+        self._logs = logs
+        self.__myLogger = self.__setup_logger("tcp_server_logger", self._logs)
+        
+        self.__reqHandler = request_handler.reqHandler()
         
     def start(self):
         self.__srvSocket.listen()
@@ -19,6 +22,7 @@ class tcpServer:
             cl_socket, cl_addr = self.__srvSocket.accept()
             self.__myLogger.info(f"Uj kapcsolat errol a cimrol: {cl_addr[0]}:{cl_addr[1]}")
             self.__handle_client(cl_socket)
+            #Egyetlen kapcsolat esetén, ezelől a két sor elől is ki kell venni a komment jelet
             # self.__close()
             # break
     
@@ -44,10 +48,12 @@ class tcpServer:
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
         return logger
-        
-    def __close(self):
-        self.__srvSocket.close()
-        self.__myLogger.info("Az adatbazis szerver leall...")
+       
+    # Tesztelés szempontjából, ha egyetlen kapcsolat erejéig kell működjön a szerver
+    #Illetve, ha nem akarjuk manuálisan lekapcsolni 
+    # def __close(self):
+    #     self.__srvSocket.close()
+    #     self.__myLogger.info("Az adatbazis szerver leall...")
         
 if __name__ == "__main__":
     srv = tcpServer("127.0.0.1", 53435)
