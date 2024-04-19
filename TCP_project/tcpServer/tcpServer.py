@@ -3,7 +3,7 @@ import request_handler
 import logging
 
 class tcpServer:
-    def __init__(self, host, port, logs = "./serverlogs/general.txt"):
+    def __init__(self, host, port, logs = "tcpServer/serverlogs/general.txt"):
         self.__host = host
         self.__port = port
         

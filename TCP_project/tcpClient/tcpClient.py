@@ -2,7 +2,7 @@ import socket
 import logging
 
 class tcpClient:
-    def __init__(self, host, port, logs = "./clientlogs/general.txt"):
+    def __init__(self, host, port, logs = "tcpClient/clientlogs/general.txt"):
         self.__clSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.__host = host
         self.__port = port

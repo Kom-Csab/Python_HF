@@ -2,7 +2,7 @@ import logging
 import database_manager
 
 class reqHandler:
-    def __init__(self, logs = "./serverlogs/general.txt"):
+    def __init__(self, logs = "tcpServer/serverlogs/general.txt"):
         self.__logs = logs
         self.__myLogger = self.__setup_logger("tcp_requests_handler", self.__logs)  
         self.__dbManager = database_manager.databaseHandler()
